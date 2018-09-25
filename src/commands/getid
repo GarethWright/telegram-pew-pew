@@ -1,0 +1,10 @@
+export default {
+  name: 'GetID', // max 20 chars
+  info: '`/getid` to have the bot send you your chatID',
+  func: (msg, done, bot) => {
+   
+      bot.sendMessage(msg.chat.id, 'Your chat id is:' + msg.chat.id);
+    }
+    return false;
+  },
+};
